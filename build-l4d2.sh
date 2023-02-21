@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t left4devops/l4d2 .
+docker build -t zsir/l4d2 .
