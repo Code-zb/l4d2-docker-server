@@ -52,7 +52,7 @@ e.g. If your working directory had a addons folder:
 `docker run -v addons:/home/louis/l4d2/left4dead2/addons/`...
 
 ### Alternate command line options
-Any commands sent to the docker will replace the default commands line options for `./srcds_run`
+_Any commands sent to the docker will replace the default commands line options for `./srcds_run`_
 
 e.g. `docker run left4devops/l4d2 -port 27020 +map "c14m1_junkyard" +sv_lan 1` will execute `./srcds_run -port 27020 +map "c14m1_junkyard" +sv_lan 1` 
 
