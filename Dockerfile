@@ -21,7 +21,6 @@ ENV MAP=$DEFAULT_MAP \
     HOSTNAME="Zsir Docker Server" \
     REGION=4 \
     GAME_ID=$GAME_ID \
-    INSTALL_DIR=$INSTALL_DIR
 
 ADD entrypoint.sh entrypoint.sh
 ENTRYPOINT ./entrypoint.sh
