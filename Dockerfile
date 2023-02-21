@@ -5,9 +5,6 @@ ARG GAME_ID=222860
 ARG INSTALL_DIR="l4d2"
 ARG DEFAULT_MAP="c2m1_highway"
 
-ADD enviroment.sh .
-RUN ./enviroment.sh
-
 WORKDIR /home/l4d2
 USER l4d2
 
@@ -15,6 +12,9 @@ FROM base AS game
 
 EXPOSE 27015/tcp
 EXPOSE 27015/udp
+
+ADD enviroment.sh .
+RUN ./enviroment.sh
 
 ENV MAP=$DEFAULT_MAP \
     PORT=27015 \
